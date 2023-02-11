@@ -8,18 +8,117 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    font-size: 18px;
+    overflow: hidden;
 }
 
+.bg-top {
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    right: 50%;
 
+}
+
+.bg-bottom {
+    position: absolute;
+    z-index: -1;
+    bottom: -54%;
+    left: 50%;
+
+    
+}
+
+main.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.portrait img {
+    margin-top: -50px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+
+}
+
+.title {
+    width: 100%;
+}
+
+.title h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+    font-weight: 700;
+}
+
+.title span {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: hsl(227, 10%, 46%);
+}
+
+.title p {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid hsl(0, 0%, 59%, 40%);
+    color: hsl(227, 10%, 46%);
+    font-size: 1rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats h2 {
+    font-size: 1.2rem;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+    padding: 30px 25px 5px 25px;
+    font-weight: 700;
+}
+
+.stats p {
+    font-size: .7rem;
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: .1rem;
+    padding-bottom: 30px;
+}
 
 
 
 
 .attribution {
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 30px;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
+    cursor: pointer; 
+}
+
+.attribution a:hover {
+    color: hsl(39, 100%, 50%);
 }
